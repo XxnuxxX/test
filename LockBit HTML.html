@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Malware Lockbit: le bilan</title>
+		<link rel = "stylesheet" href = "CSS/LockBit CSS.css">
+	</head>
+	
+	<body>
+		<style>
+        
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background: linear-gradient(rgb(94, 33, 33),rgb(0, 0, 0)),
+		  linear-gradient(rgb(0,0,0), rgb(85, 35, 35));
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #ffffff;
+          display: block;
+          transition: 0.5s;
+		  text-align: left;
+        }
+        
+        .sidenav a:hover {
+          color: #e3b714;
+		  font-weight: bold;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+        
+        
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="HTML/Fonctionnement.html">Fonctionnement</a>
+          <a href="HTML/Etapes.html">Etapes de fonctionnement</a>
+          <a href="HTML/Cibles.html">Les cibles et comment ne pas en devenir une</a>
+        </div>
+        
+        
+        <span style="font-size:30px;cursor:pointer;color: rgb(213, 23, 23);" onclick="openNav()">&#9776; Menu</span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+
+
+
+
+		<h1>Malware Lockbit: le bilan</h1>
+		
+		<section>
+			<h3>INTRO</h3>
+		
+			<p>
+				Dans le domaine de la sécurité informatique, les risques sont en perpétuelle 
+				évolution. Parmi ces dernières, on peut citer les logiciels malveillants, 
+				couramment désignés sous le nom de ransomwares. Ils cherchent simplement à rendre
+				les systèmes informatiques inaccessibles en cryptant les données et en demandant
+				une rançon à la clé. <br>
+
+				Le ransomware Lockbit est un acteur particulièrement inquiétant dans ce domaine,
+				posant de graves défis aux organisations à travers le monde. Ce groupe est connu
+				pour son système de ransomware sophistiqué et impitoyable, qui pénètre dans les
+				systèmes informatiques, crypte des données essentielles et demande des rançons
+				élevées, laissant les victimes face à des choix ardus.
+			</p>
+
+		</section>
+
+		<section>
+		
+			<h2>LockBit, qu'est ce que c'est ?</h2>
+			
+			<h3><ol>Son histoire</ol></h3>
+
+			<p>
+				Apparu en septembre 2019, le Lockbit ransomware a rapidement évolué pour 
+				devenir l'un des groupes de ransomware les plus actifs au monde. 
+				Ses premières attaques ont ciblé divers pays, dont les États-Unis, 
+				la Chine et plusieurs nations européennes, dont la France. Elles visent 
+				principalement des organisations disposant de fonds importants et 
+				susceptibles de payer des rançons conséquentes pour minimiser les 
+				perturbations. <br>
+
+				Au fil du temps, LockBit a constamment évolué et s'est adapté. De 
+				nombreuses variantes sont apparues et ont permis la prolifération du virus 
+				et a augmenté son impact.
+
+				<nav class="menu">
+					<section class="categorie">
+						<h3>.abcd</h3>
+						<ul>
+							<li><a>La version d'origine de LockBit renomme les fichiers avec l'extension 
+								« .abcd ». Par ailleurs, elle inclut une note de rançon avec des demandes 
+								et des instructions pour des restaurations allégées dans le fichier 
+								Restore-My-Files.txt, inséré dans chaque dossier.<br>
+				
+								C'est en janvier 2020 que le groupe a commencé à opérer comme un 
+								ransomware-as-a-service (RaaS) et a adopté le nom LockBit.</a></li>
+						</ul>
+					</section>
+					<section class="categorie">
+						<h3>.LockBit</h3>
+						<ul>
+							<li><a>La seconde version connue de ce ransomware a adapté l'extension «.LockBit », 
+								d'où son nom actuel. Cependant, les victimes constateront que d'autres 
+								caractéristiques de cette version sont similaires malgré des révisions du 
+								backend.</a></li>
+							
+						</ul>
+					</section>
+					<section class="categorie">
+						<h3>LockBit 2.0</h3>
+						<ul>
+							<li><a>En juin 2021, les cybercriminels derrière Lockbit ont lancé une nouvelle 
+								version de leur logiciel malveillant : LockBit 2.0. Cette mise à jour 
+								apporte plusieurs améliorations qui accentuent la menace pesée par Lockbit, 
+								notamment des mécanismes plus sophistiqués pour éviter la détection, ainsi 
+								qu'un business model en « Ransomware as a Service » où les cybercriminels 
+								louent l'infrastructure nécessaire pour mener des attaques. Bien que cette 
+								version ne soit pas la première dans le genre, elle illustre la tendance 
+								croissante des ransomwares à évoluer constamment afin de tirer profit des 
+								vulnérabilités et des failles de sécurité. La version identifiable suivante 
+								de LockBit exclut le téléchargement du navigateur Tor dans ses instructions 
+								de rançon. À la place, elle renvoie ses victimes sur un autre site Web via 
+								un accès Internet classique.</a></li>
+							
+						</ul>
+					</section>
+					<section class="categorie">
+						<h3>LockBit 3.0</h3>
+						<ul>
+							<li><a>LockBit 3.0, lancé fin juin 2022, continue d'améliorer la rapidité de 
+								chiffrement pour échapper à la détection sécuritaire. D'après les experts en 
+								cybersécurité ce malware emploie des tactiques anti-analyse, fonctionne 
+								uniquement avec un mot de passe et utilise des commandes avancées.<br>
+				
+								Ce ransomware se distingue également par son programme inédit de Bug Bounty, 
+								invitant utilisateurs et spécialistes en sécurité à rapporter les failles en 
+								échange de récompenses financières, allant de 1 000 à 1 million de dollars. 
+								Cette initiative vise à encourager la révélation de vulnérabilités 
+								exploitables par LockBit et à suggérer des pistes d'évolution au groupe. 
+								LockBit s'intéresse particulièrement aux bugs affectant les systèmes de 
+								verrouillage, les failles du réseau Tor, les vulnérabilités de la messagerie 
+								Tox, et les bugs de sites web.</a></li>
+							
+						</ul>
+					</section>
+					
+				</nav>
+		
+		</section>
+
+		<section>
+			<br><br><br><br><br><br><br><br>
+
+			<h3><ol>Conclusion</ol></h3>
+
+			<p>
+				LockBit, ransomware actif depuis 2019, s'est rapidement imposé comme l'une des menaces les plus sophistiquées. 
+				Il infiltre les entreprises via le phishing, les failles de sécurité et les attaques par force brute, chiffrant 
+				les données et exigeant des rançons élevées. Parmi ses victimes figurent Thales, Volkswagen ou encore Royal Mail 
+				illustrant ainsi l'étendue de ses cibles.<br><br>
+				
+				Les versions LockBit 2.0 et 3.0 ont renforcé sa rapidité de propagation et ses techniques d'évasion, incluant 
+				un programme de Bug Bounty pour identifier des failles. Face à cette menace, il est essentiel que les entreprises 
+				adoptent des mesures de sécurité robustes : mots de passe complexes, authentification multi-facteur, restrictions 
+				des privilèges et sauvegardes régulières. Ces précautions aident à limiter les risques d'attaques et à minimiser leurs 
+				impacts dans un contexte où les ransomwares évoluent constamment. 
+			</p>
+		</section>
+	</body>
+
+</html>
